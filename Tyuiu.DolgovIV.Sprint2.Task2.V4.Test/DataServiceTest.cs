@@ -9,7 +9,7 @@ namespace Tyuiu.DolgovIV.Sprint2.Task2.V4.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            bool wait = false;
+            bool wait = true;
             int x = 3;
             int y = 2;
             Assert.AreEqual(wait, ds.CheckDotInShadedArea(x, y));

@@ -24,10 +24,10 @@ namespace Tyuiu.DolgovIV.Sprint2.Task2.V4.Lib
 
             int[][] bracket = { Array1, Array2, Array3, Array4, Array5, Array6, Array7, Array8, Array9, Array10, Array11, Array12, Array13, Array14, Array15 };
 
-            if (x>15 || x<1 || y>15 || y<1) return false;
+            if (x>15 || x<1 || y>15 || y<1) return true;
 
-            if (bracket[x - 1][y - 1] == 0) return false;
-            else return true;
+            if (bracket[x - 1][y - 1] == 0) return true;
+            else return false;
 
 
 

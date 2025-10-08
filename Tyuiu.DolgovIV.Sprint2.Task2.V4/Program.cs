@@ -32,7 +32,7 @@ internal class Program
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
-        if (ds.CheckDotInShadedArea(x, y))
+        if (!ds.CheckDotInShadedArea(x, y))
         {
             Console.WriteLine("Точка находится в заштрихованной области");
         }
