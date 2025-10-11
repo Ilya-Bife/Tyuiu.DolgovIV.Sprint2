@@ -2,7 +2,7 @@
 
 namespace Tyuiu.DolgovIV.Sprint2.Task4.V1.Lib
 {
-    public class DataService : ISprint2Task4V0
+    public class DataService : ISprint2Task4V1
     {
         public double Calculate(double x, double y)
         {
