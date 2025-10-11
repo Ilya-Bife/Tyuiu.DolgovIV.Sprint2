@@ -12,22 +12,24 @@ namespace Tyuiu.DolgovIV.Sprint2.Task6.V12.Lib
                 res = m switch
                 {
                     1 => "31" + "." + "12" + "." + Convert.ToString(g - 1),
-                    2 => "31" + "." + Convert.ToString(m - 1) + "." + Convert.ToString(g),
-                    3 => "29" + "." + Convert.ToString(m - 1) + "." + Convert.ToString(g),
-                    4 => "31" + "." + Convert.ToString(m - 1) + "." + Convert.ToString(g),
-                    5 => "30" + "." + Convert.ToString(m - 1) + "." + Convert.ToString(g),
-                    6 => "31" + "." + Convert.ToString(m - 1) + "." + Convert.ToString(g),
-                    7 => "30" + "." + Convert.ToString(m - 1) + "." + Convert.ToString(g),
-                    8 => "31" + "." + Convert.ToString(m - 1) + "." + Convert.ToString(g),
-                    9 => "31" + "." + Convert.ToString(m - 1) + "." + Convert.ToString(g),
-                    10 => "30" + "." + Convert.ToString(m - 1) + "." + Convert.ToString(g),
+                    2 => "31" + "." + "0" + Convert.ToString(m - 1) + "." + Convert.ToString(g),
+                    3 => "29" + "." + "0" + Convert.ToString(m - 1) + "." + Convert.ToString(g),
+                    4 => "31" + "." + "0" + Convert.ToString(m - 1) + "." + Convert.ToString(g),
+                    5 => "30" + "." + "0" + Convert.ToString(m - 1) + "." + Convert.ToString(g),
+                    6 => "31" + "." + "0" + Convert.ToString(m - 1) + "." + Convert.ToString(g),
+                    7 => "30" + "." + "0" + Convert.ToString(m - 1) + "." + Convert.ToString(g),
+                    8 => "31" + "." + "0" + Convert.ToString(m - 1) + "." + Convert.ToString(g),
+                    9 => "31" + "." + "0" + Convert.ToString(m - 1) + "." + Convert.ToString(g),
+                    10 => "30" + "." + "0" + Convert.ToString(m - 1) + "." + Convert.ToString(g),
                     11 => "31" + "." + Convert.ToString(m - 1) + "." + Convert.ToString(g),
                     12 => "30" + "." + Convert.ToString(m - 1) + "." + Convert.ToString(g),
                 };
             }
             else
-            { 
-                res = Convert.ToString(n-1) + "." + Convert.ToString(m) + "." + Convert.ToString(g);
+            {
+                string mon = (Convert.ToString(m).Length == 2) ? Convert.ToString(m) : ("0" + Convert.ToString(m));
+                string num = (Convert.ToString(n - 1).Length == 2) ? Convert.ToString(n - 1) : ("0" + Convert.ToString(n - 1));
+                res = num + "." + mon + "." + Convert.ToString(g);
             }
             return res;
             

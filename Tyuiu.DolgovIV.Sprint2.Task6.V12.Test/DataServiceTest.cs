@@ -16,7 +16,7 @@ namespace Tyuiu.DolgovIV.Sprint2.Task6.V12.Test
 
 
 
-            Assert.AreEqual(ds.FindDateOfPreviousDay(g, m, n), "31.3.2000");
+            Assert.AreEqual(ds.FindDateOfPreviousDay(g, m, n), "31.03.2000");
         }
     }
 }
