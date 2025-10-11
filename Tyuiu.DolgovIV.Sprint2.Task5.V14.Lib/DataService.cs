@@ -12,25 +12,25 @@ namespace Tyuiu.DolgovIV.Sprint2.Task5.V14.Lib
             switch ((k%7+(d-1))%7)
             {
                 case 1:
-                    res = "понедельник";
+                    res = "Понедельник";
                     break;
                 case 2:
-                    res = "вторник";
+                    res = "Вторник";
                     break;
                 case 3:
-                    res = "среда";
+                    res = "Среда";
                     break;
                 case 4:
-                    res = "четверг";
+                    res = "Четверг";
                     break;
                 case 5:
-                    res = "пятница";
+                    res = "Пятница";
                     break;
                 case 6:
-                    res = "суббота";
+                    res = "Суббота";
                     break;
                 case 7:
-                    res = "воскресенье";
+                    res = "Воскресенье";
                     break;
             }
             return res;
